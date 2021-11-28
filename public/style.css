@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ////INDEX PAGE//// */
+
+
+
+.index-form{  
+    min-height: 20vh ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 252px;
+    /* margin: 0 10px; */
+    
+}
+
+.index-form a{
+    /* height: 25px; */
+    font-weight: bolder;
+    margin: 50px;
+    padding: 5px;
+    font-size: 20px;
+    border: none;
+    background-image: linear-gradient(120deg, #4158D0 0%, #C850C0 56%, #FFCC70 100%);
+    color: #ffffff ;
+    text-decoration:none;
+    background-color: white;
+    cursor: pointer;
+    padding: 25px;
+    transition: all .5s ease;
+    /* width: 50px; */
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+
+
+
+/* ///Page Transition//// */
+
+.todo-page , .index-page{
+    animation: transitionIn 1s;
+    
+    
+}
+
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+        transform: rotateY(90deg);
+    }
+
+    to{
+        opacity: 1;
+        transform: rotateY(0); 
+    }
+}
+
+
+
+/* /////TODO PAGE//// */
+
+.todo-page{
+    /* background-color: #2AF598; */
+    /* background-image: linear-gradient(120deg, #4158D0 0%, #C850C0 56%, #FFCC70 100%); */
+    min-height: 100vh;
+    
+    /* transition: ease 3s; */
+}
+
+.container{
+    /* border: 2px solid; */
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: white; */
+    margin: 0px auto;
+    padding: 50px;
+}
+
+.sub-container{
+    width: 95%;
+    /* border: 2px solid; */
+    min-height: 525px;
+    padding: 10px;
+    padding-bottom: 25px;
+    background-image: linear-gradient(120deg, #4158D0 0%, #C850C0 56%, #FFCC70 100%);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    
+}
+
+
+
+.todo-a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: -30px;
+    font-size: smaller;
+    font-weight: lighter;
+    
+}
+
+.todo-h1{
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+
+.todo-h1 , .todo-form{
+    min-height: 20vh ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.todo-form{
+    margin: 0 10px;
+    
+}
+
+#todoInput , #todoButton{
+    height: 50px;
+}
+
+
+#todoInput:focus{
+    outline: none;
+}
+
+.todo-form input, .todo-form button{
+    /* height: 25px; */
+    padding: 5px;
+    font-size: 20px;
+    border: none;
+    background: white;
+    width: 90%;
+}
+
+.todo-form button{
+    color: #4158D0 ;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    width: 50px;
+}
+
+.todo-form button:hover{
+    background-color:#4158D0 ;
+    color: white;
+}
+
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.todo-list{
+    min-width: 70%;
+    list-style: none;
+}
+
+
+
+.todo{
+    min-height: 25px;
+   margin: 10px; 
+   background-color: white;
+   color: black;
+   font-size: 15px;
+   /* font-weight: lighter; */
+   display: flex;
+   justify-content: space-between;
+   /* max-width: 250px; */
+   align-items: center;
+   /* padding: 5px; */
+}
+
+.todo li{
+    flex: 1;
+}
+
+.delete-btn , .complete-btn{
+    /* height: 100%; */
+    /* width: 8%; */
+    /* background:#4158D0 ; */
+    border: none;
+    color: black;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    font-size: 10px;
+    padding: 5px;
+    /* margin-right: 10px;  */
+}
+
+.complete-btn{
+    padding-right: 5px;
+    /* height: 100%; */
+
+}
+
+
+.complete-btn:hover{
+    background-color: rgb(58, 231, 58);
+    color: white;
+}
+.delete-btn:hover{
+    background-color: rgb(231, 58, 58);
+    color: white;
+}
+
+.todo-li{
+    padding: 0 10px;
+}
+
+.task-completed{
+    text-decoration: line-through;
+    color: gray;
+}
+
+@media only screen and (max-width: 700px) {
+    .todo{
+        overflow: scroll;
+    }
+  }
