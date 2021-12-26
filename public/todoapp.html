@@ -10,6 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+
     <title>Todo App</title>
 </head>
 
@@ -27,11 +30,11 @@
     <form class="todo-form">
         <input type="text" id="todoInput">
         <button id="todoButton"><i class="fas fa-plus-square"></i></button>
-        <button id="todoButton"><i class="fas fa-trash"></i></button>
+        <button id="delAll"><i class="fas fa-trash"></i></button>
         
     </form>
     
-    <div class="todo-container">
+    <div class="todo-container" id="todoContainer">
         <ul class="todo-list" id="todoList">
             
         </ul>

@@ -128,7 +128,7 @@
     
 }
 
-#todoInput , #todoButton{
+#todoInput , #todoButton , #delAll{
     height: 50px;
 }
 
